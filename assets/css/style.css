@@ -6,8 +6,7 @@ body {
     font-family: 'Nuniyo', sans-serif;
     margin: 0;
     padding: 0;
-}
-.container {
+    background-color: rgb(235, 235, 235);
     display: grid;
     grid-template-rows: minmax(40vh, 80vh);
 }
@@ -37,7 +36,7 @@ body {
 }
 .header-button {
     padding: 12px;
-    background-color: rgb(38, 38, 211);
+    background-color: rgb(59, 35, 194);
     color: rgb(228, 228, 228);
     align-self: start;
     justify-self: start;
@@ -75,4 +74,31 @@ body {
 .header-seenon-logos > img {
     max-height: 2.5rem;
     max-width: 100%;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 4rem 0 4rem 0;
+    justify-content: center;
+}
+.feature-box {
+    display: grid;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 80%;
+}
+.feature-button {
+    font-weight: 600;
+    color: rgb(20, 20, 20);
+    transition: 0.1s;
+    cursor: pointer;
+}
+.feature-button:hover {
+    color: rgb(10, 10, 173);
+    transition: 0.1s;
+}
+.feature-img {
+    cursor: pointer;
 }
