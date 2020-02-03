@@ -6,9 +6,9 @@ body {
     font-family: 'Nuniyo', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(243, 243, 243);
     display: grid;
-    grid-template-rows: minmax(40vh, 80vh);
+    grid-template-rows: minmax(40vh, 80vh) min-content auto;
 }
 .header {
     grid-auto-rows: auto;
@@ -44,6 +44,7 @@ body {
     font-size:1.8rem;
     transition: 0.4s;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .header-button:hover {
     background-color: rgb(10, 10, 173);
@@ -79,7 +80,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 1.5rem;
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 10% 4rem 10%;
     justify-content: center;
 }
 .feature-box {
@@ -101,4 +102,57 @@ body {
 }
 .feature-img {
     cursor: pointer;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 500px;
+    padding: 0 10% 0 10%;
+}
+.best-choice-img {
+    display: grid;
+    background-image: linear-gradient(rgba(16, 29, 44, 0.1), rgba(16, 29, 44, 0.4)),url('../img/lake.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+.best-choice-img :nth-child(1) {
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+.best-choice-img :nth-child(2) {
+    width: 115%;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    z-index: 2;
+}
+.best-choice-section {
+    display: grid;
+    background-color: rgb(235, 235, 235);
+    padding: 15%;
+    grid-template-rows: 80px 100px 80px;
+}
+.choice-button {
+    padding: 12px;
+    background-color: rgb(59, 35, 194);
+    color: rgb(228, 228, 228);
+    align-self: start;
+    justify-self: start;
+    border-width: 0;
+    font-size:1.2rem;
+    transition: 0.4s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.choice-button:hover {
+    background-color: rgb(10, 10, 173);
+    transition: 0.4s;
 }
