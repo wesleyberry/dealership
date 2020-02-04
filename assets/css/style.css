@@ -205,4 +205,10 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 80px;
     align-items: center;
+    padding: 0 0 0 10%;
+}
+i {
+    height: 15px;
+    width: 15px;
+    color: black;
 }
