@@ -130,7 +130,7 @@ html {
         grid-column-end: 6;
     }
     .best-choice-img :nth-child(2) {
-        width: 115%;
+        width: 100%;
         grid-row-start: 4;
         grid-row-end: 6;
         grid-column-start: 2;
@@ -332,6 +332,7 @@ html {
         grid-column-end: 6;
     }
     .best-choice-img :nth-child(2) {
+        width: 115%;
         grid-row-start: 4;
         grid-row-end: 6;
         grid-column-start: 4;
@@ -379,8 +380,21 @@ html {
     }
 }
 @media (min-width: 1400px) {
+    .header {
+        padding: 0 15% 0 15%;
+    }
+    .container2 {
+        padding: 4rem 15% 4rem 15%;
+    }
+    .container2 {
+        padding: 0 15% 0 15%;
+    }
     .container3 {
         grid-template-columns: repeat(3, 4fr);
         grid-gap: 100px;
+        padding: 5% 15% 5% 15%;
+    }
+    .gallery {
+        padding: 0 15% 0 15%;
     }
 }
