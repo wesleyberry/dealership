@@ -24,11 +24,9 @@ html {
         grid-template-rows: 3fr 1fr 2fr 1fr 1fr 1fr;
         grid-template-columns: 90%;
     }
-    .header-title {
-        color: rgb(250, 250, 250);
-        font-size: 2.5rem;
-        font-weight: 600;
-        text-align: center;
+    .header-image {
+        margin: 5% auto 5% auto;
+        width: 300px;
     }
     .header-subTitle {
         color: rgb(221, 223, 230);
@@ -302,8 +300,9 @@ html {
         grid-template-rows: 3fr 2fr 3fr 1fr 1fr 1fr;
         padding: 0 10% 0 10%;
     }
-    .header-title {
-        font-size: 3.2rem;
+    .header-image {
+        margin: 5% auto 5% auto;
+        width: auto;
     }
     .header-title {
         font-size: 2.5rem;
